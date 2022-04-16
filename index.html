@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giovanni Mancini</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Giovanni Mancini" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Giovanni Mancini">Giovanni Mancini</h1>
+
+          <p class="title">Game Programmer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+        
+        <li class="contact-item">
+
+          <div class="icon-box">
+            <img src="./assets/images/icon-resume.svg" alt="Resume icon" width="30">
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-title">CV</p>
+
+            <a href="#" target="_blank" class="contact-link">Download Resume</a>
+          </div>
+
+        </li>
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          
+          <li class="contact-item">
+            
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:giovannimancini2000@libero.it" class="contact-link">giovannimancini2000@libero.it</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 12, 2000</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Milano, Lombardia, ITA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button ONCLICK="Reset()" class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-unity.svg
+                " alt="Unity icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Unity</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-unreal.svg" alt="Unreal Engine icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Unreal Engine</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-visualstudio.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Visual Studio</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-adobe.svg" alt="Adobe icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Adobe</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+            
+
+      </article>
+      
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">NABA - Nuova Accademia Di Belle Arti</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ITST - Enrico Fermi</h4>
+
+              <span>2014 — 2019</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unity</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unreal Engine</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="download">
+          
+          &nbsp;
+          <a href="#" target="_blank">
+          <button class="form-btn" type="submit">
+            <img src="./assets/images/icon-resume.svg" alt="Adobe icon" width="35">
+            <span>Download Resume</span>
+          </button>
+          </a>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects" ID="Portfolio" STYLE="display:block">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Unity</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Unreal Engine</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AR</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Unity</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Unreal Engine</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AR</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="unity">
+              <a href="#" ONCLICK="ShowAndHideCinder()">
+                
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/cindercity.jpg" alt="cinder city" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Cinder City</h3>
+
+                <p class="project-category">Unity</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="unity">
+              <a href="#" ONCLICK="ShowAndHideKyle()">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/greatkylescape.jpg" alt="great kyle escape" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Great Kyle Escape</h3>
+
+                <p class="project-category">Unity</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="unreal engine">
+              <a href="#" ONCLICK="ShowAndHideRino()">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/rinosdinercrime.jpg" alt="rino's diner crime" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Rino's Diner Crime</h3>
+
+                <p class="project-category">Unreal Engine</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="unity">
+              <a href="#" ONCLICK="ShowAndHideBomb()">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/bombkids.jpg" alt="bomb kids" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Bomb Kids</h3>
+
+                <p class="project-category">Unity</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="unity">
+              <a href="#" ONCLICK="ShowAndHideOnlyWay()">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="the only way is us" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">The Only Way Is Us</h3>
+
+                <p class="project-category">Unity</p>
+
+              </a>
+            </li>
+
+          </ul>
+          
+        </section>
+
+        <!-- PROJECTS -->
+
+        <section class="projects" ID="CinderCity" STYLE="display:none">
+
+          <div class="projects">
+            
+          <h3 class="h3 form-title">Cinder City</h3>
+
+          <button class="projects" ONCLICK="Reset()">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+            
+          </div>
+
+          <figure class="project-img">
+
+            <div class="img-slider">
+              <div class="slide active">
+                <img src="./assets/images/cindercity/cinder_1.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="./assets/images/cindercity/cinder_2.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="./assets/images/cindercity/cinder_3.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="./assets/images/cindercity/cinder_3.png" alt="">
+              </div>
+              <div class="slide">
+                <div class="rwd-video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/EE-4GvjKcfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </iframe>
+                </div>
+              </div>
+              <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+              </div>
+            </div>
+
+          </figure>
+
+          
+      
+      
+                <section class="about-text">
+                  <p>
+                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+                    I enjoy
+                    turning complex problems into simple, beautiful and intuitive designs.
+                  </p>
+      
+                  <p>
+                    My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+                    Moreover, I
+                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+                    across your
+                    message and identity in the most creative way. I created web design for many famous brand companies.
+                  </p>
+                </section>
+                
+              </section>
+      
+              <section class="projects" ID="RinosDinerCrime" STYLE="display:none">
+      
+                <div class="projects">
+      
+                  <h3 class="h3 form-title">Rino's Diner Crime</h3>
+      
+                  <button class="projects" ONCLICK="Reset()">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+      
+                </div>
+      
+                <figure class="project-img">
+      
+                  <img src="./assets/images/rinosdinercrime.jpg" alt="rino's diner crime" loading="lazy">
+      
+                </figure>
+      
+                <section class="about-text">
+                  <p>
+                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+                    I enjoy
+                    turning complex problems into simple, beautiful and intuitive designs.
+                  </p>
+      
+                  <p>
+                    My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+                    Moreover, I
+                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+                    across your
+                    message and identity in the most creative way. I created web design for many famous brand companies.
+                  </p>
+                </section>
+      
+              </section>
+      
+              <section class="projects" ID="GreatKyleEscape" STYLE="display:none">
+      
+                <div class="projects">
+      
+                  <h3 class="h3 form-title">Great Kyle Escape</h3>
+      
+                  <button class="projects" ONCLICK="Reset()">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+      
+                </div>
+      
+                <figure class="project-img">
+      
+                  <img src="./assets/images/greatkylescape.jpg" alt="cinder city" loading="lazy">
+      
+                </figure>
+      
+                <section class="about-text">
+                  <p>
+                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+                    I enjoy
+                    turning complex problems into simple, beautiful and intuitive designs.
+                  </p>
+      
+                  <p>
+                    My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+                    Moreover, I
+                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+                    across your
+                    message and identity in the most creative way. I created web design for many famous brand companies.
+                  </p>
+                </section>
+      
+              </section>
+      
+              <section class="projects" ID="BombKids" STYLE="display:none">
+      
+                <div class="projects">
+      
+                  <h3 class="h3 form-title">Bomb Kids</h3>
+      
+                  <button class="projects" ONCLICK="Reset()">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+      
+                </div>
+      
+                <figure class="project-img">
+      
+                  <img src="./assets/images/bombkids.jpg" alt="bomb kids" loading="lazy">
+      
+                </figure>
+      
+                <section class="about-text">
+                  <p>
+                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+                    I enjoy
+                    turning complex problems into simple, beautiful and intuitive designs.
+                  </p>
+      
+                  <p>
+                    My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+                    Moreover, I
+                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+                    across your
+                    message and identity in the most creative way. I created web design for many famous brand companies.
+                  </p>
+                </section>
+      
+              </section>
+      
+              <section class="projects" ID="TheOnlyWayIsUs" STYLE="display:none">
+      
+                <div class="projects">
+      
+                  <h3 class="h3 form-title">The Only Way Is Us</h3>
+      
+                  <button class="projects" ONCLICK="Reset()">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+      
+                </div>
+      
+                <figure class="project-img">
+      
+                  <img src="./assets/images/greatkylescape.jpg" alt="the only way is us" loading="lazy">
+      
+                </figure>
+      
+                <section class="about-text">
+                  <p>
+                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+                    I enjoy
+                    turning complex problems into simple, beautiful and intuitive designs.
+                  </p>
+      
+                  <p>
+                    My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+                    Moreover, I
+                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+                    across your
+                    message and identity in the most creative way. I created web design for many famous brand companies.
+                  </p>
+                </section>
+      
+              </section>
+      
+            </article>
+      
+            
+            <!--
+              - #CONTACT
+            -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+  </script>
+
+</body>
+
+</html>
