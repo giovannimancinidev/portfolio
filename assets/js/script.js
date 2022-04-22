@@ -1,13 +1,5 @@
 'use strict';
 
-function changeImage()
-{
-  var img = document.getElementById("image");
-  img.src="./assets/images/cindercity/cinder_1.png";
-  return false;
-}
-
-
 //disable things
 function ShowAndHideCinder() {
   var a = document.getElementById('Portfolio');
@@ -76,6 +68,11 @@ function Reset() {
   var d = document.getElementById('RinosDinerCrime');
   var e = document.getElementById('BombKids');
   var f = document.getElementById('TheOnlyWayIsUs');
+  var video1 = document.getElementById('CinderCityVideo');
+  var video2 = document.getElementById('RinosDinerCrimeVideo');
+  var video3 = document.getElementById('GreatKyleEscapeVideo');
+  var video4 = document.getElementById('BombKidsVideo');
+  var video5 = document.getElementById('TheOnlyWayIsUsVideo');
 
   a.style.display = 'block';
   b.style.display = 'none';
@@ -83,6 +80,11 @@ function Reset() {
   d.style.display = 'none';
   e.style.display = 'none';
   f.style.display = 'none';
+  video1.src = video1.src;
+  video2.src = video2.src;
+  video3.src = video3.src;
+  video4.src = video4.src;
+  video5.src = video5.src;
 }
 
 
@@ -97,46 +99,6 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-/*
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-
-  testimonialsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
-  });
-
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-*/
 
 
 // custom select variables
