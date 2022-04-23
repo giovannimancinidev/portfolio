@@ -131,10 +131,6 @@ li { list-style: none; }
 
 img, ion-icon, a, button, time, span { display: block; }
 
-imgbtn{
-  padding-left: 60px;
-}
-
 button {
   font: inherit;
   background: none;
@@ -1058,6 +1054,7 @@ button.projects ion-icon { --ionicon-stroke-width: 50px;}
   position: absolute;
   top: 0;
   width: 100%;
+  border: 0;
 }
 
 
