@@ -61,6 +61,30 @@ function ShowAndHideOnlyWay() {
   }
 }
 
+function ShowAndHideDogsQuest() {
+  var a = document.getElementById('Portfolio');
+  var g = document.getElementById('DogsQuest');
+  if (a.style.display == 'block') {
+    a.style.display = 'none';
+    g.style.display = 'block';
+  } else {
+    a.style.display = 'block';
+    g.style.display = 'none';
+  }
+}
+
+function ShowAndHideUhane() {
+  var a = document.getElementById('Portfolio');
+  var h = document.getElementById('Uhane');
+  if (a.style.display == 'block') {
+    a.style.display = 'none';
+    h.style.display = 'block';
+  } else {
+    a.style.display = 'block';
+    h.style.display = 'none';
+  }
+}
+
 function Reset() {
   var a = document.getElementById('Portfolio');
   var b = document.getElementById('CinderCity');
@@ -68,11 +92,15 @@ function Reset() {
   var d = document.getElementById('RinosDinerCrime');
   var e = document.getElementById('BombKids');
   var f = document.getElementById('TheOnlyWayIsUs');
+  var g = document.getElementById('DogsQuest');
+  var h = document.getElementById('Uhane');
   var video1 = document.getElementById('CinderCityVideo');
   var video2 = document.getElementById('RinosDinerCrimeVideo');
   var video3 = document.getElementById('GreatKyleEscapeVideo');
   var video4 = document.getElementById('BombKidsVideo');
   var video5 = document.getElementById('TheOnlyWayIsUsVideo');
+  var video6 = document.getElementById('DogsQuestVideo');
+  var video7 = document.getElementById('UhaneVideo');
 
   a.style.display = 'block';
   b.style.display = 'none';
@@ -80,11 +108,15 @@ function Reset() {
   d.style.display = 'none';
   e.style.display = 'none';
   f.style.display = 'none';
+  g.style.display = 'none';
+  h.style.display = 'none';
   video1.src = video1.src;
   video2.src = video2.src;
   video3.src = video3.src;
   video4.src = video4.src;
   video5.src = video5.src;
+  video6.src = video6.src;
+  video7.src = video7.src;
 }
 
 
