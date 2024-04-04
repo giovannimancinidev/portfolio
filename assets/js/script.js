@@ -85,6 +85,18 @@ function ShowAndHideUhane() {
   }
 }
 
+function ShowAndHideUnknown() {
+  var a = document.getElementById('Portfolio');
+  var i = document.getElementById('TheUnknownProject');
+  if (a.style.display == 'block') {
+    a.style.display = 'none';
+    i.style.display = 'block';
+  } else {
+    a.style.display = 'block';
+    i.style.display = 'none';
+  }
+}
+
 function Reset() {
   var a = document.getElementById('Portfolio');
   var b = document.getElementById('CinderCity');
@@ -94,6 +106,7 @@ function Reset() {
   var f = document.getElementById('TheOnlyWayIsUs');
   var g = document.getElementById('DogsQuest');
   var h = document.getElementById('Uhane');
+  var i = document.getElementById('TheUnknownProject');
   var video1 = document.getElementById('CinderCityVideo');
   var video2 = document.getElementById('RinosDinerCrimeVideo');
   var video3 = document.getElementById('GreatKyleEscapeVideo');
@@ -101,6 +114,7 @@ function Reset() {
   var video5 = document.getElementById('TheOnlyWayIsUsVideo');
   var video6 = document.getElementById('DogsQuestVideo');
   var video7 = document.getElementById('UhaneVideo');
+  var video8 = document.getElementById('TheUnknownProjectVideo');
 
   a.style.display = 'block';
   b.style.display = 'none';
@@ -110,6 +124,7 @@ function Reset() {
   f.style.display = 'none';
   g.style.display = 'none';
   h.style.display = 'none';
+  i.style.display = 'none';
   video1.src = video1.src;
   video2.src = video2.src;
   video3.src = video3.src;
@@ -117,6 +132,7 @@ function Reset() {
   video5.src = video5.src;
   video6.src = video6.src;
   video7.src = video7.src;
+  video8.src = video8.src;
 }
 
 
@@ -157,19 +173,21 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
+  // Replace spaces in selectedValue with dashes if spaces are used in the HTML attribute to denote separate words in a single category
+  const formattedSelectedValue = selectedValue.replace(/\s+/g, '-').toLowerCase();
 
   for (let i = 0; i < filterItems.length; i++) {
+    // Use a different delimiter like '|' to separate categories
+    const categories = filterItems[i].dataset.category.split('|').map(category => category.trim().replace(/\s+/g, '-').toLowerCase());
 
-    if (selectedValue === "all") {
+    if (formattedSelectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    } else if (categories.includes(formattedSelectedValue)) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
     }
-
   }
-
 }
 
 // add event in all filter button items for large screen
